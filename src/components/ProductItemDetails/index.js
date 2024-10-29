@@ -3,6 +3,7 @@ import {Link} from 'react-router-dom'
 import Cookies from 'js-cookie'
 import Loader from 'react-loader-spinner'
 import {BsPlusSquare, BsDashSquare} from 'react-icons/bs'
+
 import CartContext from '../../context/CartContext'
 
 import Header from '../Header'
@@ -79,8 +80,6 @@ class ProductItemDetails extends Component {
 
   renderLoadingView = () => (
     <div className="products-details-loader-container" data-testid="loader">
-      {' '}
-      {/* Change made here: Added data-testid attribute */}
       <Loader type="ThreeDots" color="#0b69ff" height="50" width="50" />
     </div>
   )
@@ -162,20 +161,20 @@ class ProductItemDetails extends Component {
                 <div className="quantity-container">
                   <button
                     type="button"
-                    aria-label="Decrease quantity"
                     className="quantity-controller-button"
+                    aria-label="Mute volume"
                     onClick={this.onDecrementQuantity}
-                    data-testid="minus" // Change made here: Added data-testid attribute
+                    data-testid="minus"
                   >
                     <BsDashSquare className="quantity-controller-icon" />
                   </button>
                   <p className="quantity">{quantity}</p>
                   <button
                     type="button"
-                    aria-label="Increase quantity"
                     className="quantity-controller-button"
+                    aria-label="Mute volume"
                     onClick={this.onIncrementQuantity}
-                    data-testid="plus" // Change made here: Added data-testid attribute
+                    data-testid="plus"
                   >
                     <BsPlusSquare className="quantity-controller-icon" />
                   </button>
