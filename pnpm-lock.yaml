@@ -13,6 +13,7 @@ specifiers:
   js-cookie: 3.0.0
   lint-staged: 10.5.4
   msw: 0.33.0
+  node4: 1.0.0
   npm-run-all: 4.1.5
   prettier: 2.2.1
   react: 17.0.1
@@ -21,6 +22,7 @@ specifiers:
   react-loader-spinner: 4.0.0
   react-router-dom: 5.2.0
   react-scripts: 4.0.3
+  reactjs-popup: 2.0.6
 
 dependencies:
   '@testing-library/jest-dom': 5.11.9
@@ -30,11 +32,13 @@ dependencies:
   history: 5.0.0
   js-cookie: 3.0.0
   msw: 0.33.0
+  node4: 1.0.0
   react: 17.0.1
   react-dom: 17.0.1_react@17.0.1
   react-icons: 4.2.0_react@17.0.1
   react-loader-spinner: 4.0.0_react-dom@17.0.1+react@17.0.1
   react-router-dom: 5.2.0_react@17.0.1
+  reactjs-popup: 2.0.6_react-dom@17.0.1+react@17.0.1
 
 devDependencies:
   eslint-config-airbnb: 18.2.1
@@ -9862,6 +9866,10 @@ packages:
     resolution: {integrity: sha512-y10wOWt8yZpqXmOgRo77WaHEmhYQYGNA6y421PKsKYWEK8aW+cqAphborZDhqfyKrbZEN92CN1X2KbafY2s7Yw==}
     dev: true
 
+  /node4/1.0.0:
+    resolution: {integrity: sha512-fkg+E0n6s6yb2BcRSv80zzzF5DoakHcF2YpOBWH49cAV4g7bGtWbRQMRDpGchnOQwEQvjz24zwsMrakvB2uwwA==}
+    dev: false
+
   /normalize-package-data/2.5.0:
     resolution: {integrity: sha512-/5CMN3T0R4XTj4DcGaexo+roZSdSFW/0AOOTROrjxzCG1wrWXEsGbRKevjlIL+ZDE4sZlJr5ED4YW0yqmkK+eA==}
     dependencies:
@@ -11612,6 +11620,17 @@ packages:
     dependencies:
       loose-envify: 1.4.0
       object-assign: 4.1.1
+    dev: false
+
+  /reactjs-popup/2.0.6_react-dom@17.0.1+react@17.0.1:
+    resolution: {integrity: sha512-A+tt+x9wdgZiZjv0e2WzYLD3IfFwJALaRaqwrCSXGjo0iQdsry/EtBEbQXRSmQs7cHmOi5eytCiSlOm8k4C+dg==}
+    engines: {node: '>=10'}
+    peerDependencies:
+      react: '>=16'
+      react-dom: '>=16'
+    dependencies:
+      react: 17.0.1
+      react-dom: 17.0.1_react@17.0.1
     dev: false
 
   /read-pkg-up/7.0.1:
