@@ -49,7 +49,7 @@ const CartItem = props => (
               <button
                 type="button"
                 className="quantity-controller-button"
-                aaria-label="increase quantity"
+                aria-label="increase quantity"
                 onClick={onIncrementCartItemQty}
                 data-testid="plus"
               >
