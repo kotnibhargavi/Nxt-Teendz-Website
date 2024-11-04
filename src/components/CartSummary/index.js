@@ -1,5 +1,3 @@
-import Payment from '../Payment'
-
 import CartContext from '../../context/CartContext'
 
 import './index.css'
